@@ -45,27 +45,31 @@ div_table.append(h3, span);
 
 let soma = 0;
 
-for (let i = 0; i < produtos.length; i++) {
-  let li = document.createElement("li");
+function list_soma() {
+  for (let i = 0; i < produtos.length; i++) {
+    const li = document.createElement("li");
 
-  let p = document.createElement("p")
-  p.innerText = produtos[i].nome;
+    const p = document.createElement("p");
+    p.innerText = produtos[i].nome;
 
-  let div_item = document.createElement("div");
-  
-  let span = document.createElement("span");
-  span.innerText = `R$ ${produtos[i].preco}`;
-  
-  li.append(p, span)
+    const div_item = document.createElement("div");
 
-  div_item.classList.add(`item_${i + 1}`);
+    const span = document.createElement("span");
+    span.innerText = `R$ ${produtos[i].preco}`;
 
-  div_item.append(li);
+    li.append(p, span);
 
-  ul.append(div_item);
-  
-  soma += produtos[i].preco;
+    div_item.classList.add(`item_${i + 1}`);
+
+    div_item.append(li);
+
+    ul.append(div_item);
+
+    soma += produtos[i].preco;
+  }
 }
+
+list_soma();
 
 const section = document.createElement("section");
 section.classList.add("finalizar");
