@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 50vw;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+.table, .item_1 li, .item_2 li, .item_3 li, .item_4 li, .item_5 li, .total_fim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgba(150, 150, 150, 0.103);
+}
+
+.table, .total_fim {
+    padding: 20px;
+}
+
+.table {
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    height: 8vh;
+}
+
+.lista {
+    list-style: none;
+    font-weight: bold;
+}
+
+.total_fim {
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.total_fim  h3{
+    font-weight:100;
+}
+
+.finalizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 102vh;
+}
+
+.button {
+
+    align-items: center;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(6, 228, 161, 0.918);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: rgba(6, 228, 161, 0.705);
+    cursor: pointer;
+}
